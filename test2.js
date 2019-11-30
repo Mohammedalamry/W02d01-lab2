@@ -55,8 +55,8 @@ console.log(getTwoLengths("Hank", "Hippopopalous"));
      // let h =1;  
 while(c<arr.length){  
      long=arr[c]; 
-if(longest[c].length>maxlengh.length){ 
-     maxlengh=longest
+if(longest[c]>maxlengh.length){ 
+     maxlengh=longest;
     longest=arr[c].length;
 
     long=arr[c];
@@ -72,4 +72,40 @@ if(longest[c].length>maxlengh.length){
  
 
 console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
+function maxOfThree(num1,num2,num3){
+   let i=0;
+   let maxnumber =num1
+while(i<3){
+  if( maxnumber>num2 ){ 
+  return maxnumber =num1; 
+  }
 
+  if (num2>maxnumber||num3){
+  return maxnumber=num2;
+
+} else{ return maxnumber=num3  ;        
+   }
+i++;
+    
+} 
+}
+
+
+
+console.log(maxOfThree(6, 9, 1));
+
+function transmogrify (num1,num2,num3){
+   let i=0;
+   while(i<2){
+   let x=num1*num2    
+return   Math.pow(x, num3)
+
+i++;
+
+}
+}
+
+
+
+
+console.log(transmogrify(5, 3, 2));
